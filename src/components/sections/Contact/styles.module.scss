@@ -1,0 +1,147 @@
+.section {
+  padding: 5rem 1.5rem;
+  background-color: #ffffff;
+
+  .dark & {
+    background-color: #1f2937;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 1.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+
+  .dark & {
+    color: #ffffff;
+  }
+}
+
+.highlight {
+  color: #8b5cf6;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  max-width: 48rem;
+  margin: 0 auto;
+
+  .dark & {
+    color: #d1d5db;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contactCard {
+  background-color: #f9fafb;
+  padding: 2rem;
+  border-radius: 2rem;
+
+  .dark & {
+    background-color: #111827;
+  }
+}
+
+.contactTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 1.5rem;
+
+  .dark & {
+    color: #ffffff;
+  }
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #3b82f6;
+  margin-top: 0.25rem;
+}
+
+.contactHeading {
+  font-weight: 600;
+  color: #111827;
+
+  .dark & {
+    color: #ffffff;
+  }
+}
+
+.contactText {
+  color: #4b5563;
+
+  .dark & {
+    color: #d1d5db;
+  }
+}
+
+.map {
+  background-color: #e5e7eb;
+  height: 16rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .dark & {
+    background-color: #374151;
+  }
+}
+
+.mapContent {
+  text-align: center;
+  color: #6b7280;
+
+  .dark & {
+    color: #9ca3af;
+  }
+}
+
+.mapIcon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.mapLocation {
+  font-size: 0.875rem;
+}

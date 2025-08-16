@@ -1,0 +1,77 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: relative;
+  max-width: 64rem; // 4xl
+  width: 100%;
+  margin: 0 1rem;
+}
+
+.closeBtn {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #d1d5db; // gray-300
+  }
+}
+
+.closeIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.content {
+  background-color: #111827; // gray-900
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  // padding-top: 56.25%; // 16:9 aspect ratio
+  background-color: #1f2937; // gray-800
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoPlaceholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+}
+
+.playIcon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+  opacity: 0.5;
+}
+
+.title {
+  font-size: 1.125rem; // text-lg
+}
+
+.videoId {
+  font-size: 0.875rem; // text-sm
+  color: #9ca3af; // gray-400
+  margin-top: 0.5rem;
+}

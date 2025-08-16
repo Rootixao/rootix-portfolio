@@ -1,0 +1,36 @@
+.container {
+  text-align: center;
+}
+
+.avatar {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto 1rem;
+  background: linear-gradient(to bottom right, #60a5fa, #a78bfa);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+
+  .dark & {
+    color: #ffffff;
+  }
+}
+
+.role {
+  color: #4b5563;
+
+  .dark & {
+    color: #d1d5db;
+  }
+}
