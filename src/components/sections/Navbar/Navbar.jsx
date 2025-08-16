@@ -79,6 +79,12 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <div className={styles.mobileButtons}>
+            <button className={styles.langButton} onClick={toggleLanguage}>
+              <Globe size={20} />
+              <span className={styles.langText}>
+                {t(lang.toUpperCase() === "AR" ? "EN" : "AR")}
+              </span>
+            </button>
             <button
               onClick={() => setDarkMode(!darkMode)}
               className={styles.themeButton}
@@ -89,6 +95,7 @@ export default function Navbar() {
                 <Moon className={styles.iconSmall} />
               )}
             </button>
+
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className={styles.menuButton}
